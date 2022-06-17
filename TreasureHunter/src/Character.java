@@ -27,6 +27,13 @@ public Character(String charName, int charLevel) {
 	this.name = charName;
 	this.level = charLevel;
 	this.hp = this.level * 6;
+	this.str = rollStats();
+	this.dex = rollStats();
+	this.wis = rollStats();
+	this.intel = rollStats();
+	this.con = rollStats();
+	this.cha = rollStats();
+	this.charClass = "Fighter";
 }
 public Character(String charName) {
 	this.name = charName;
